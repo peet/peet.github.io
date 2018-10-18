@@ -25,7 +25,7 @@ names.addEventListener('keydown', function(e) {
     }
   }
   if (e.which == 9) {
-    if (!e.shiftKey && e.target == names.lastChild) {
+    if (!e.shiftKey && e.target == names.lastChild && e.target.innerHTML != '') {
       e.preventDefault();
       addBox(names);
     }
